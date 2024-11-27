@@ -1,0 +1,651 @@
+/** ############ MAIN ########## */
+:root {
+	--main-text-color: rgb(52, 52, 52);
+	--secondary-text-color: rgb(116, 129, 130);
+	--secondary-font: "Poppins", sans-serif;
+	--main-font: "Montserrat", serif;
+	--bg-grey: rgb(247, 247, 247);
+	--bg-icons-grey: rgb(244 244 243);
+}
+html {
+	scroll-padding-top: 72px;
+}
+body {
+	font-family: var(--secondary-font);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--main-font);
+}
+.bg-section {
+	background-color: var(--bg-grey);
+}
+
+.section-head {
+	color: var(--main-text-color);
+	font-weight: 900;
+	font-size: 40px;
+	position: relative;
+	z-index: 0;
+}
+.section-head::after {
+	content: "";
+	background-image: url(../images/dots.png);
+	background-repeat: repeat;
+	position: absolute;
+	width: 80%;
+	height: 80%;
+	left: 0;
+	bottom: -10%;
+	z-index: -1;
+}
+
+.hover-bw:hover .stacked-icon-front-white {
+	color: black !important;
+}
+.hover-bw:hover .stacked-icon-bg-black {
+	color: white !important;
+}
+.stacked-icon-front-white,
+.stacked-icon-bg-black {
+	transition: all 0.5s;
+}
+
+/*& ############## NAVBAR ##################### */
+.nav-item a {
+	font-size: 14px;
+	position: relative;
+}
+.nav-item a.active::after {
+	content: "";
+	width: 80%;
+	height: 3px;
+	position: absolute;
+	background-color: #ffffff;
+	bottom: 0;
+	left: 10%;
+}
+/*& ################### HEADER ################ */
+#home {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url(../images/bg.jpg);
+	background-attachment: fixed;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	.container {
+		height: 100vh;
+		.inner {
+			h2 {
+				font-size: 50px;
+				font-weight: 800;
+			}
+			h1 {
+				font-size: 30px;
+				font-weight: 200;
+
+				&::after {
+					content: "";
+					animation-name: typing;
+					animation-duration: 10s;
+					animation-timing-function: ease-out;
+					animation-iteration-count: infinite;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+}
+
+@keyframes typing {
+	0% {
+		content: " |";
+	}
+
+	1.25% {
+		content: " |";
+	}
+
+	2.5% {
+		content: " L|";
+	}
+
+	3.75% {
+		content: " La|";
+	}
+
+	5% {
+		content: " Lar|";
+	}
+
+	6.25% {
+		content: " Larr|";
+	}
+
+	7.5% {
+		content: " Larry|";
+	}
+
+	8.75% {
+		content: " Larry |";
+	}
+
+	10% {
+		content: " Larry D|";
+	}
+
+	11.25% {
+		content: " Larry Da|";
+	}
+
+	12.5% {
+		content: " Larry Dan|";
+	}
+
+	13.75% {
+		content: " Larry Dani|";
+	}
+
+	15% {
+		content: " Larry Danie|";
+	}
+
+	16.25% {
+		content: " Larry Daniel|";
+	}
+
+	17.5% {
+		content: " Larry Daniels|";
+	}
+
+	18.75% {
+		content: " Larry Daniels|";
+	}
+
+	20% {
+		content: " Larry Daniels|";
+	}
+
+	21.25% {
+		content: " Larry Daniels|";
+	}
+
+	22.5% {
+		content: " Larry Daniels|";
+	}
+
+	23.75% {
+		content: " Larry Daniels|";
+	}
+
+	25% {
+		content: " Larry Daniels|";
+	}
+
+	26.25% {
+		content: " Larry Daniel|";
+	}
+
+	27.5% {
+		content: " Larry Danie|";
+	}
+
+	28.75% {
+		content: " Larry Dani|";
+	}
+
+	30% {
+		content: " Larry Dan|";
+	}
+
+	31.25% {
+		content: " Larry Da|";
+	}
+
+	32.5% {
+		content: " Larry D|";
+	}
+
+	33.75% {
+		content: " Larry |";
+	}
+
+	35% {
+		content: " Larry|";
+	}
+
+	36.25% {
+		content: " Larr|";
+	}
+
+	37.5% {
+		content: " Lar|";
+	}
+
+	38.75% {
+		content: " La|";
+	}
+
+	40% {
+		content: " L|";
+	}
+
+	41.25% {
+		content: " |";
+	}
+
+	42.5% {
+		content: " D|";
+	}
+
+	43.75% {
+		content: " De|";
+	}
+
+	45% {
+		content: " Dev|";
+	}
+
+	46.25% {
+		content: " Deve|";
+	}
+
+	47.5% {
+		content: " Devel|";
+	}
+
+	48.75% {
+		content: " Develo|";
+	}
+
+	50% {
+		content: " Develop|";
+	}
+
+	51.25% {
+		content: " Develope|";
+	}
+
+	52.5% {
+		content: " Developer|";
+	}
+
+	53.75% {
+		content: " Developer|";
+	}
+
+	55% {
+		content: " Developer|";
+	}
+
+	56.25% {
+		content: " Developer|";
+	}
+	57.5% {
+		content: " Developer|";
+	}
+
+	58.75% {
+		content: " Developer|";
+	}
+
+	60% {
+		content: " Develope|";
+	}
+
+	61.25% {
+		content: " Develop|";
+	}
+
+	62.5% {
+		content: " Develo|";
+	}
+
+	63.75% {
+		content: " Devel|";
+	}
+
+	65% {
+		content: " Deve|";
+	}
+
+	66.25% {
+		content: " Dev|";
+	}
+
+	67.5% {
+		content: " De|";
+	}
+
+	68.75% {
+		content: " D|";
+	}
+
+	70% {
+		content: " |";
+	}
+
+	71.25% {
+		content: " D|";
+	}
+
+	72.5% {
+		content: " De|";
+	}
+
+	73.75% {
+		content: " Des|";
+	}
+
+	75% {
+		content: " Desi|";
+	}
+
+	76.25% {
+		content: " Desig|";
+	}
+
+	77.5% {
+		content: " Design|";
+	}
+
+	78.75% {
+		content: " Designe|";
+	}
+
+	80% {
+		content: " Designer|";
+	}
+
+	81.25% {
+		content: " Designer|";
+	}
+	82.5% {
+		content: " Designer|";
+	}
+
+	83.75% {
+		content: " Designer|";
+	}
+
+	85% {
+		content: " Designer|";
+	}
+
+	86.25% {
+		content: " Designer|";
+	}
+
+	87.5% {
+		content: " Designe|";
+	}
+
+	88.75% {
+		content: " Design|";
+	}
+
+	90% {
+		content: " Desig|";
+	}
+
+	91.25% {
+		content: " Desi|";
+	}
+
+	92.5% {
+		content: " Des|";
+	}
+
+	93.75% {
+		content: " De|";
+	}
+
+	95% {
+		content: " D|";
+	}
+
+	96.25% {
+		content: " |";
+	}
+
+	97.5% {
+		content: " |";
+	}
+
+	100% {
+		content: " |";
+	}
+}
+/*& ################# ABOUT ################ */
+
+.about-head {
+	font-size: 30px;
+	font-weight: 800;
+	color: var(--main-text-color);
+	line-height: 33px;
+}
+.about-info {
+	font-size: 14px;
+	letter-spacing: 2px;
+	font-weight: 400;
+	color: var(--secondary-text-color);
+}
+.progress {
+	box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2) inset;
+	margin-top: 2rem;
+}
+.progress,
+.progress-bar {
+	height: 1.5rem;
+}
+
+.about-img::after {
+	content: "";
+	width: 85%;
+	height: 85%;
+	background-image: url(../images/dots.png);
+	background-repeat: repeat;
+	position: absolute;
+	left: -5%;
+	bottom: -5%;
+	z-index: -1;
+}
+
+.about-btn-black,
+.about-btn-transparent {
+	font-size: 13px;
+}
+
+.about-btn-black:hover {
+	background-color: transparent !important;
+	color: #000000 !important;
+}
+.about-btn-transparent:hover {
+	background-color: black !important;
+	color: #fff !important;
+}
+
+/*& ##################### SERVICES ##################### */
+.card-top-text {
+	font-weight: 800;
+	font-size: 18px;
+}
+.card-bottom-text {
+	font-size: 14px;
+	line-height: 1.6;
+	color: var(--secondary-text-color);
+}
+
+.stacked-icon-bg {
+	color: var(--bg-icons-grey);
+	transition: all 0.6s;
+}
+.stacked-icon-front {
+	color: var(--main-text-color);
+	transition: all 0.6s;
+	font-size: 24px;
+}
+.inner:hover .stacked-icon-front {
+	color: white;
+}
+.inner:hover .stacked-icon-bg {
+	color: black;
+}
+
+/*& ############ PORTFOLIO ################### */
+
+#works .container .nav .nav-item button {
+	font-size: 16px !important;
+	font-weight: 700 !important;
+}
+.nav-tabs .nav-link,
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+	border: none;
+}
+
+.nav-tabs .nav-link:hover {
+	position: relative;
+}
+
+.nav-tabs .nav-link.active {
+	position: relative;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+	background-color: transparent;
+	border: none;
+}
+.nav-tabs .nav-link:hover::after,
+.nav-tabs .nav-link.active::after {
+	content: "";
+	width: 50%;
+	height: 2px;
+	background-color: #000000;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translatex(-50%);
+}
+.work-example .overlay {
+	bottom: -5%;
+	transition: all 0.6s;
+	width: 97%;
+	height: 97%;
+	left: 1.5%;
+}
+.center-data {
+	transition: all 0.6s;
+
+	h6 {
+		font-size: 13px;
+		font-weight: 700;
+		letter-spacing: 2px;
+	}
+}
+.work-example:hover {
+	.center-data {
+		gap: 10px !important;
+	}
+	.overlay {
+		bottom: 1.5%;
+		opacity: 1 !important;
+	}
+}
+
+.tab-pane.active {
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+}
+/*& ############ Testimonials ################ */
+.circle {
+	width: 100px;
+	height: 100px;
+}
+
+.carousel-indicators .indicator {
+	height: 10px;
+	width: 10px;
+}
+.carousel-indicators .indicator:hover {
+	background-color: #869791 !important;
+	opacity: 1;
+}
+.carousel-item {
+	p {
+		color: var(--secondary-text-color);
+		font-size: 15px;
+	}
+	h6 {
+		font-size: 16px;
+		font-weight: 600;
+		color: var(--main-text-color);
+	}
+}
+/*& ############# COUNTERS ############## */
+h3.counter {
+	font-size: 30px;
+	font-weight: 900;
+	color: var(--main-text-color);
+}
+p.counter-text {
+	color: var(--secondary-text-color);
+	font-size: 15px;
+	font-weight: 600;
+}
+/*& ################# TEAM ################# */
+.card-image .overlay {
+	width: 50%;
+	height: 50%;
+	transition: all 0.7s;
+	transform: translateX(-50%) translateY(-50%);
+	opacity: 0;
+}
+.card-image img {
+	transition: all 0.7s;
+}
+.card-image:hover img {
+	transform: scale(1.1);
+}
+
+.card-example:hover .card-image .overlay {
+	width: 97%;
+	height: 97%;
+	transform: translateX(-50%) translateY(-50%) rotatey(360deg);
+	opacity: 0.8;
+}
+.card-foot {
+	h4 {
+		font-size: 24px;
+	}
+	h5 {
+		font-weight: 700;
+		font-size: 20px;
+	}
+}
+
+/*& ################## CONTACT ############## */
+.form-control,
+.form-control:focus {
+	background-color: var(--bg-icons-grey);
+	font-size: 0.9rem;
+}
+
+/** ############## MEDIA ################# */
+
+@media only screen and (min-width: 768px) {
+	#home .container .inner h1 {
+		font-size: 45px;
+	}
+}
+@media only screen and (min-width: 992px) {
+	#home .container .inner h1 {
+		font-size: 60px;
+	}
+}
